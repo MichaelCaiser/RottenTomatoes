@@ -31,5 +31,5 @@ Time spent: `<11>`
  - [ ] Implement the restaurant detail page
 
 ### Walkthrough
-![Video Walkthrough](Yelp.git)
+![Video Walkthrough](Yelp.gif)
 
