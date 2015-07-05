@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
+#import "RestaurantTableVC.h"
 
 @implementation AppDelegate
 
@@ -15,8 +15,14 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    self.window.rootViewController = [[MainViewController alloc] init];
+    RestaurantTableVC *restaurantController =[[RestaurantTableVC alloc] init];
+
     
+    //setup navigation controller
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:restaurantController];
+
+    
+    self.window.rootViewController = navigationController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
